@@ -1,0 +1,11 @@
+{
+  "author": "CHRISFBT1",
+  "homepage": "https://github.com/chrisskurda/bootleg-bridge-thing",
+  "source": "https://github.com/chrisskurda/bootleg-bridge-thing",
+  "icon": null,
+  "screenshots": [],
+  "categories": [
+    "music"
+  ],
+  "min_libbridgething_version": "0.17.0"
+}
