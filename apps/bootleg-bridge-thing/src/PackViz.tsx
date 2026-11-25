@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AudioBuilder, type Meta } from './audio';
 import type { WireFrame } from './bridge';
 import { loadHelpers, type PackInfo } from './packs';
@@ -23,6 +23,7 @@ export function PackViz({
   duration: number;
 }) {
   const ref = useRef<HTMLIFrameElement>(null);
+  const [stale, setStale] = useState(false);
   const live = useRef({ meta, duration });
   live.current = { meta, duration };
 
@@ -53,7 +54,10 @@ export function PackViz({
         w.__PARAMS = {};
         w.__META = live.current.meta;
         const fr = frame.current;
-        if (fr && now - fr.at < 1500) {
+        // frames from an older bootleg lack the packed bands: say so instead of silently showing the idle animation
+        const old = !!fr && typeof fr.f.s !== 'string';
+        setStale(s => (s === old ? s : old));
+        if (fr && !old && now - fr.at < 1500) {
           if (fr.f !== seen) {
             seen = fr.f;
             A = builder.build(fr.f, live.current.meta, live.current.duration);
@@ -75,12 +79,19 @@ export function PackViz({
   }, [pack.id, frame]);
 
   return (
-    <iframe
-      key={pack.id}
-      ref={ref}
-      title={pack.name}
-      src={`viz/packs/${pack.id}/${pack.page}`}
-      className="absolute inset-0 h-full w-full border-0 bg-black"
-    />
+    <>
+      <iframe
+        key={pack.id}
+        ref={ref}
+        title={pack.name}
+        src={`viz/packs/${pack.id}/${pack.page}`}
+        className="absolute inset-0 h-full w-full border-0 bg-black"
+      />
+      {stale ? (
+        <div className="absolute inset-x-0 top-3 mx-auto w-fit rounded-xl bg-bg/90 px-4 py-2 text-lg text-bad">
+          Update bootleg: it is sending old-format audio frames
+        </div>
+      ) : null}
+    </>
   );
 }
