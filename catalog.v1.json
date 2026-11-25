@@ -1,0 +1,51 @@
+{
+  "$schema": "https://apps.bridgething.com/schemas/catalog/v1.json",
+  "schema": "catalog.v1",
+  "updated_at": "2026-11-25T22:04:17.813Z",
+  "repo": {
+    "name": "bootleg-bridge-thing",
+    "description": "Webapps by bootleg-bridge-thing.",
+    "homepage": "https://github.com/chrisskurda/bootleg-bridge-thing",
+    "icon": null
+  },
+  "apps": [
+    {
+      "id": "01a2148d-63cd-7376-90cb-f444649b1774",
+      "name": "bootleg-bridge-thing",
+      "description": "Remote control, now playing and a live visualizer for the bootleg desktop player.",
+      "author": "CHRISFBT1",
+      "icon": null,
+      "categories": [
+        "music"
+      ],
+      "homepage": "https://github.com/chrisskurda/bootleg-bridge-thing",
+      "source": "https://github.com/chrisskurda/bootleg-bridge-thing",
+      "versions": [
+        {
+          "version": "0.2.1",
+          "released_at": "2026-11-25T22:04:17.757Z",
+          "download": {
+            "url": "https://chrisskurda.github.io/bootleg-bridge-thing/r/01a2148d-63cd-7376-90cb-f444649b1774/0.2.1.zip",
+            "size": 501223,
+            "sha256": "bd72fc1d7c97ed1a9b585c8eff4561891b5d702e8892845e024934b45c5e82bc"
+          },
+          "settings": {
+            "url": "https://chrisskurda.github.io/bootleg-bridge-thing/s/01a2148d-63cd-7376-90cb-f444649b1774/0.2.1.html",
+            "size": 39733,
+            "sha256": "9674cda8df58f931e3da221828a01b9dd5e8617a7525218e6f40ee7fe198f539"
+          },
+          "permissions": [],
+          "extension": {
+            "desktop": true,
+            "permissions": [
+              "net:127.0.0.1:8899"
+            ]
+          },
+          "min_libbridgething_version": "0.17.0",
+          "changelog": "Say so on screen when bootleg is sending old-format audio frames."
+        }
+      ]
+    }
+  ],
+  "recommended_sources": []
+}
