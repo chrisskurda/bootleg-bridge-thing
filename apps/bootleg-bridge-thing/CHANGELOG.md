@@ -1,5 +1,9 @@
 # bootleg-bridge-thing
 
+## 0.2.2
+
+Add app icon
+
 ## 0.2.1
 
 Say so on screen when bootleg is sending old-format audio frames.

@@ -1,8 +1,9 @@
 {
   "id": "01a2148d-63cd-7376-90cb-f444649b1774",
   "name": "bootleg-bridge-thing",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Remote control, now playing and a live visualizer for the bootleg desktop player.",
+  "icon": "icon.png",
   "settings": "settings.html",
   "config": [],
   "permissions": [],
