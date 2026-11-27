@@ -1,7 +1,7 @@
 {
   "$schema": "https://apps.bridgething.com/schemas/catalog/v1.json",
   "schema": "catalog.v1",
-  "updated_at": "2026-11-26T03:22:43.622Z",
+  "updated_at": "2026-11-27T01:50:23.548Z",
   "repo": {
     "name": "bootleg-bridge-thing",
     "description": "Webapps by bootleg-bridge-thing.",
@@ -66,6 +66,43 @@
           },
           "min_libbridgething_version": "0.17.0",
           "changelog": "Say so on screen when bootleg is sending old-format audio frames."
+        }
+      ]
+    },
+    {
+      "id": "01a2195f-d987-737f-9617-f15690e6e5a2",
+      "name": "bootleg-composer-thing",
+      "description": "Play bootleg Composer from the Car Thing: pads, bendable keys, drawn waveforms, record and the knob.",
+      "author": "CHRISFBT1",
+      "icon": null,
+      "categories": [
+        "music"
+      ],
+      "homepage": "https://github.com/chrisskurda/bootleg-bridge-thing",
+      "source": "https://github.com/chrisskurda/bootleg-bridge-thing",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "released_at": "2026-11-27T01:50:23.545Z",
+          "download": {
+            "url": "https://chrisskurda.github.io/bootleg-bridge-thing/r/01a2195f-d987-737f-9617-f15690e6e5a2/0.1.0.zip",
+            "size": 399245,
+            "sha256": "07d9a1726ac746ca3339e15ab6700123b14d40d5449c466e18f64b74cbe2bd63"
+          },
+          "settings": {
+            "url": "https://chrisskurda.github.io/bootleg-bridge-thing/s/01a2195f-d987-737f-9617-f15690e6e5a2/0.1.0.html",
+            "size": 39737,
+            "sha256": "3bafd2488b33d9b376e29c4a5b47b64f0662f44febcb23d9aee94793a7c21078"
+          },
+          "permissions": [],
+          "extension": {
+            "desktop": true,
+            "permissions": [
+              "net:127.0.0.1:8898"
+            ]
+          },
+          "min_libbridgething_version": "0.17.0",
+          "changelog": "First release: play bootleg Composer (0.5.0 or later) from the Car Thing.\n\n- Pads: hitting near the top of a pad plays louder.\n- Two octaves of keys that bend as a held finger slides sideways.\n- Waves drawn with a finger, which become a looping sample and a riff in Composer.\n- Record into the looping riff, select riffs, loop, play and stop.\n- A Loop page for Composer's live looper on the Mac's input: record and overdub on the big button or the knob click,\n  a ping-pong delay with tempo-synced times, feedback and mix, plus undo, clear and keep.\n- Presets 1-4 pick the four pages.\n- The knob bends held notes. With nothing held it sets the delay feedback on the Loop page, and scrubs the song\n  elsewhere."
         }
       ]
     }
