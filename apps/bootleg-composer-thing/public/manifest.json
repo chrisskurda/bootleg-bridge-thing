@@ -1,0 +1,20 @@
+{
+  "id": "01a2195f-d987-737f-9617-f15690e6e5a2",
+  "name": "bootleg-composer-thing",
+  "version": "0.1.0",
+  "description": "Play bootleg Composer from the Car Thing: pads, bendable keys, drawn waveforms, record and the knob.",
+  "settings": "settings.html",
+  "config": [],
+  "permissions": [],
+  "art": {
+    "heroPx": 248,
+    "thumbPx": 96
+  },
+  "extension": {
+    "entry": "extension/desktop.mjs",
+    "permissions": [
+      "net:127.0.0.1:8898"
+    ],
+    "api": 1
+  }
+}

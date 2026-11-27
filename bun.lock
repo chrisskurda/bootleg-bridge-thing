@@ -12,6 +12,32 @@
     },
     "apps/bootleg-bridge-thing": {
       "name": "bootleg-bridge-thing",
+      "version": "0.2.2",
+      "dependencies": {
+        "@bridgething/client": "^0.17.0",
+        "@bridgething/extension": "^0.17.0",
+        "preact": "^11.0.1",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+      },
+      "devDependencies": {
+        "@msgpack/msgpack": "^3.1.3",
+        "@preact/preset-vite": "^2.10.6",
+        "@tailwindcss/vite": "^4.3.3",
+        "@types/react": "^19.2.10",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^6.1.1",
+        "deno": "2.9.6",
+        "esbuild": "^0.28.2",
+        "fflate": "^0.8.2",
+        "tailwindcss": "^4.3.3",
+        "typescript": "^6.0.3",
+        "vite": "^8.2.2",
+        "vite-plugin-singlefile": "^2.3.3",
+      },
+    },
+    "apps/bootleg-composer-thing": {
+      "name": "bootleg-composer-thing",
       "version": "0.1.0",
       "dependencies": {
         "@bridgething/client": "^0.17.0",
@@ -269,6 +295,8 @@
     "boolbase": ["boolbase@1.0.0", "", {}, "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="],
 
     "bootleg-bridge-thing": ["bootleg-bridge-thing@workspace:apps/bootleg-bridge-thing"],
+
+    "bootleg-composer-thing": ["bootleg-composer-thing@workspace:apps/bootleg-composer-thing"],
 
     "browserslist": ["browserslist@4.29.6", "", { "dependencies": { "baseline-browser-mapping": "^2.11.37", "caniuse-lite": "^1.0.30001826", "electron-to-chromium": "^1.5.486", "node-releases": "^2.0.64", "update-browserslist-db": "^1.4.0" }, "bin": { "browserslist": "cli.js" } }, "sha512-CmVVIQ3RVc5HxYEc9X84GvxK/C8C1wH8TlKAiO7uTxF8PDwt7r8t9Qk3J9NkMOVzX5O/HbLv3yzxZg9HPrnI9w=="],
 

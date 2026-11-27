@@ -1,5 +1,11 @@
 # bootleg-bridge-thing
 
+Two Car Thing apps:
+- **bootleg-bridge-thing**: the player remote, described below.
+- **bootleg-composer-thing**: plays bootleg Composer from the screen and knob, with pads, keys that bend, drawn
+  waves, record, scrubbing and a looper. It's at `apps/bootleg-composer-thing`, and Composer's `docs/COMPANION.md` has the
+  protocol.
+
 A Spotify Car Thing app (via [bridgething](https://bridgething.com)) that remote-controls the [bootleg](../bootleg) desktop player:
 now playing with cover art, transport, seek, volume, per-stem mute/solo for stem renders, and bootleg's own visualizer packs running on the device. Touch-first UI (every control 64px+) in bootleg's theme.
 

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* bootleg's palette and system fonts, sized for a thumb on an 800x480 screen */
+@theme {
+  --color-bg: #0d0f17;
+  --color-panel: #151925;
+  --color-panel2: #1b2030;
+  --color-hover: #232a3f;
+  --color-line: #272d42;
+  --color-ink: #e7eaf6;
+  --color-muted: #8b93b0;
+  --color-faint: #5d6585;
+  --color-accent: #7c8cff;
+  --color-accent2: #ff5fd2;
+  --color-on: #1d2342;
+  --color-ok: #46d39a;
+  --color-bad: #ff6b7a;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+    width: 800px;
+    height: 480px;
+    margin: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    user-select: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    touch-action: manipulation;
+  }
+}
